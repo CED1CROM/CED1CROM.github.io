@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Conceptos Semióticos - SIGNIA</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Inter:wght@400;500;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="nav">
+  <div class="brandmark">
+    <img src="Logo.svg" alt="Logo">
+  </div>
+
+  <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+
+  <nav class="links" id="navLinks">
+    <a href="index.html">Inicio</a>
+    <a href="acerca.html">Acerca</a>
+
+    <div class="dropdown">
+      <a href="contenido.html" class="dropdown-toggle" aria-expanded="false">
+        Contenido
+        <svg class="dropdown-arrow" width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+      <div class="dropdown-menu">
+
+        <a href="conceptos-semioticos.html" class="dropdown-link">Conceptos semióticos</a>
+
+        <div class="dropdown-sub">
+          <span class="dropdown-subtitle">Filósofos de la semiótica</span>
+          <a href="charles-sanders-peirce.html">Charles Sanders Peirce</a>
+          <a href="ferdinand-de-saussure.html">Ferdinand de Saussure</a>
+          <a href="roland-barthes.html">Roland Barthes</a>
+          <a href="umberto-eco.html">Umberto Eco</a>
+          <a href="conceptos-de-publicidad.html">Conceptos de publicidad</a>
+        </div>
+
+       <div class="dropdown-sub">
+  <span class="dropdown-subtitle">Arquetipos</span>
+  <a href="arquetipos.html#el-amante">El Amante</a>
+  <a href="arquetipos.html#el-amigo">El Amigo</a>
+  <a href="arquetipos.html#el-bufon">El Bufón</a>
+  <a href="arquetipos.html#el-creador">El Creador</a>
+  <a href="arquetipos.html#el-cuidador">El Cuidador</a>
+  <a href="arquetipos.html#el-explorador">El Explorador</a>
+  <a href="arquetipos.html#el-gobernante">El Gobernante</a>
+  <a href="arquetipos.html#el-heroe">El Héroe</a>
+  <a href="arquetipos.html#el-inocente">El Inocente</a>
+  <a href="arquetipos.html#el-mago">El Mago</a>
+  <a href="arquetipos.html#el-rebelde">El Rebelde</a>
+  <a href="arquetipos.html#el-sabio">El Sabio</a>
+</div>
+
+      </div>
+    </div>
+
+    <a href="universo.html">Universo de Signia</a>
+    <a href="marcas.html">10 Marcas</a>
+    <a href="otros.html">Otros</a>
+  </nav>
+
+  <div class="nav-spacer"></div>
+</header>
+
+<!-- ===================== ÍNDICE / GLOSARIO ===================== -->
+<section class="contenido-section" id="glosario">
+
+  <div class="contenido-left">
+    <h1 class="contenido-title">Conceptos semióticos</h1>
+
+    <div class="glossary-columns">
+
+      <div class="glossary-group">
+        <span class="letter">C</span>
+        <ul>
+          <li><a href="#codigo">Código</a></li>
+          <li><a href="#comunicacion">Comunicación</a></li>
+          <li><a href="#comunicacion-visual">Comunicación Visual</a></li>
+          <li><a href="#connotacion">Connotación</a></li>
+          <li><a href="#contexto">Contexto</a></li>
+        </ul>
+      </div>
+
+      <div class="glossary-group">
+        <span class="letter">D</span>
+        <ul>
+          <li><a href="#denotacion">Denotación</a></li>
+        </ul>
+      </div>
+
+      <div class="glossary-group">
+        <span class="letter">E</span>
+        <ul>
+          <li><a href="#emojis">Emojis</a></li>
+          <li><a href="#emisor">Emisor</a></li>
+          <li><a href="#emoticones">Emoticonos</a></li>
+        </ul>
+      </div>
+
+      <div class="glossary-group">
+        <span class="letter">I</span>
+        <ul>
+          <li><a href="#icono">Ícono</a></li>
+          <li><a href="#indice">Índice</a></li>
+          <li><a href="#interpretacion">Interpretación</a></li>
+          <li><a href="#interpretante">Interpretante</a></li>
+        </ul>
+      </div>
+
+      <div class="glossary-group">
+        <span class="letter">L</span>
+        <ul>
+          <li><a href="#lenguaje">Lenguaje</a></li>
+          <li><a href="#logotipos">Logotipos</a></li>
+        </ul>
+      </div>
+
+      <div class="glossary-group">
+        <span class="letter">M</span>
+        <ul>
+          <li><a href="#marcas">Marcas</a></li>
+          <li><a href="#mensaje">Mensaje</a></li>
+        </ul>
+      </div>
+
+      <div class="glossary-group">
+        <span class="letter">P</span>
+        <ul>
+          <li><a href="#pictogramas">Pictogramas</a></li>
+        </ul>
+      </div>
+
+      <div class="glossary-group">
+        <span class="letter">R</span>
+        <ul>
+          <li><a href="#receptor">Receptor</a></li>
+          <li><a href="#referente">Referente</a></li>
+        </ul>
+      </div>
+
+      <div class="glossary-group">
+        <span class="letter">S</span>
+        <ul>
+          <li><a href="#semiosis">Semiosis</a></li>
+          <li><a href="#semiotica">Semiótica</a></li>
+          <li><a href="#senaletica">Señalética</a></li>
+          <li><a href="#significado">Significado</a></li>
+          <li><a href="#significante">Significante</a></li>
+          <li><a href="#signo">Signo</a></li>
+          <li><a href="#simbolo">Símbolo</a></li>
+          <li><a href="#sistema-de-signos">Sistema de signos</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="contenido-mascots">
+    <img src="contenido.svg" alt="Personajes Signia">
+  </div>
+
+</section>
+
+<!-- ===================== CÓDIGO ===================== -->
+<section class="term-section" id="codigo">
+  <div class="term-text">
+    <h1 class="term-title">Código</h1>
+    <p><strong>Definición:</strong>Es un conjunto de reglas y signos compartidos que permite codificar, transmitir y descifrar un mensaje para que el emisor y el receptor puedan entenderse.</p>
+    <p><strong>Ejemplo:</strong>Las señales de tránsito forman un código compuesto por formas, colores y símbolos bajo un conjunto de reglas compartidas; un círculo rojo con una barra blanca al centro comunica "prohibido el paso", un mensaje que cualquier conductor comprende de inmediato porque conoce el mismo sistema.</p>
+  </div>
+  <div class="term-visual">
+    <img src="Codigo.svg" alt="Ejemplo visual: Código">
+  </div>
+</section>
+
+<!-- ===================== COMUNICACIÓN ===================== -->
+<section class="term-section" id="comunicacion">
+  <div class="term-text">
+    <h1 class="term-title">Comunicación</h1>
+    <p><strong>Definición:</strong>Es el proceso mediante el cual se transmite e intercambia información, ideas, emociones o conocimientos entre dos o más participantes a través de un código compartido.</p>
+    <p><strong>Ejemplo:</strong>Una llamada telefónica entre dos amigas para coordinar la hora de salida, donde ambas hablan español —el código compartido— y se intercambian de forma fluida el papel de emisor y receptor.</p>
+  </div>
+  <div class="term-visual">
+    <img src="comunicacion.svg" alt="Ejemplo visual: Comunicación">
+  </div>
+</section>
+
+<!-- ===================== COMUNICACIÓN VISUAL ===================== -->
+<section class="term-section" id="comunicacion-visual">
+  <div class="term-text">
+    <h1 class="term-title">Comunicación Visual</h1>
+    <p><strong>Definición:</strong>Es el proceso de transmitir ideas, información o mensajes a través de elementos gráficos e imágenes (como fotografías, ilustraciones, símbolos, colores y tipografías) que se perciben mediante la vista.</p>
+    <p><strong>Ejemplo:</strong>Un cartel de "Prohibido usar celular" con el dibujo del teléfono tachado con una línea roja comunica el mensaje al instante usando solo la vista, sin necesidad de hablar ni escribir explicaciones.</p>
+  </div>
+  <div class="term-visual">
+    <img src="Comunicacion visual.svg" alt="Ejemplo visual: Comunicación Visual">
+  </div>
+</section>
+
+<!-- ===================== CONNOTACIÓN ===================== -->
+<section class="term-section" id="connotacion">
+  <div class="term-text">
+    <h1 class="term-title">Connotación</h1>
+    <p><strong>Definición:</strong>Es el significado subjetivo, expresivo o secundario que se le atribuye a una palabra, imagen o mensaje según el contexto, la cultura o las emociones, más allá de su sentido literal.</p>
+    <p><strong>Ejemplo:</strong>La palabra "corazón" en una frase como "eres un gran corazón" o una ilustración de un corazón rojo no se refiere al órgano muscular del cuerpo, sino que transmite la idea de amor, bondad y afecto según la cultura y el contexto emocional.</p>
+  </div>
+  <div class="term-visual">
+    <img src="connotacion.svg" alt="Ejemplo visual: Connotación">
+  </div>
+</section>
+
+<!-- ===================== CONTEXTO ===================== -->
+<section class="term-section" id="contexto">
+  <div class="term-text">
+    <h1 class="term-title">Contexto</h1>
+    <p><strong>Definición:</strong>Es el conjunto de circunstancias (sociales, culturales, históricas, de lugar o de tiempo) que rodean a un hecho, mensaje o signo, y que determinan su verdadero significado o interpretación.</p>
+    <p><strong>Ejemplo:</strong>Levantar el dedo pulgar hacia arriba significa "todo bien" en un partido de fútbol, pero en una antigua arena romana significaba perdonarle la vida a un gladiador; el entorno y la época cambian por completo lo que transmite la misma imagen.</p>
+  </div>
+  <div class="term-visual">
+    <img src="contexto.svg" alt="Ejemplo visual: Contexto">
+  </div>
+</section>
+
+<!-- ===================== DENOTACIÓN ===================== -->
+<section class="term-section" id="denotacion">
+  <div class="term-text">
+    <h1 class="term-title">Denotación</h1>
+    <p><strong>Definición:</strong>En una imagen es su significado literal, objetivo y descriptivo. Consiste en nombrar o enumerar únicamente lo que se ve a simple vista, sin incluir interpretaciones, emociones o valores culturales.</p>
+    <p><strong>Ejemplo:</strong>"El corazón bombea sangre a todo el cuerpo." Literal (denotativo): es el significado exacto, objetivo y directo que encuentras en el diccionario —el órgano muscular del sistema circulatorio—, sin metáforas ni dobles sentidos.</p>
+  </div>
+  <div class="term-visual">
+    <img src="denotacion.svg" alt="Ejemplo visual: Denotación">
+  </div>
+</section>
+
+<!-- ===================== EMISOR ===================== -->
+<section class="term-section" id="emisor">
+  <div class="term-text">
+    <h1 class="term-title">Emisor</h1>
+    <p><strong>Definición:</strong>Es el sujeto, entidad o sistema que origina, codifica y transmite el mensaje con una intención comunicativa concreta hacia uno o varios receptores.</p>
+    <p><strong>Ejemplo:</strong>Un profesor explicando una clase en el aula actúa como el emisor, ya que es la persona que organiza la idea en su mente, la convierte en palabras y transmite la lección a sus estudiantes.</p>
+  </div>
+  <div class="term-visual">
+    <img src="emisor.svg" alt="Ejemplo visual: Emisor">
+  </div>
+</section>
+
+<!-- ===================== EMOJIS ===================== -->
+<section class="term-section" id="emojis">
+  <div class="term-text">
+    <h1 class="term-title">Emojis</h1>
+    <p><strong>Definición:</strong>Es un pequeño ícono o imagen digital que se utiliza en mensajes electrónicos, redes sociales y sitios web para expresar emociones, ideas, objetos o conceptos de forma rápida y visual.</p>
+    <p><strong>Ejemplo:</strong>La carita con lágrimas de risa no expresa dolor o tristeza, sino mucha gracia o diversión, permitiendo transmitir esa emoción de inmediato en un mensaje digital.</p>
+  </div>
+  <div class="term-visual">
+    <img src="emoljis.svg" alt="Ejemplo visual: Emojis">
+  </div>
+</section>
+
+<!-- ===================== EMOTICONES ===================== -->
+<section class="term-section" id="emoticones">
+  <div class="term-text">
+    <h1 class="term-title">Emoticones</h1>
+    <p><strong>Definición:</strong>Es una representación gráfica de una expresión facial creada a partir de la combinación de caracteres tipográficos, como signos de puntuación, letras y números, para transmitir un estado de ánimo o una emoción en la escritura digital.</p>
+    <p><strong>Ejemplo:</strong>La combinación ":-)" o ":)", hecha con dos puntos y un paréntesis, es un emoticono que representa una cara sonriente para transmitir que estás feliz en un mensaje de texto.</p>
+  </div>
+  <div class="term-visual">
+    <img src="emoticones.svg" alt="Ejemplo visual: Emoticones">
+  </div>
+</section>
+
+<!-- ===================== ÍCONO ===================== -->
+<section class="term-section" id="icono">
+  <div class="term-text">
+    <h1 class="term-title">Ícono</h1>
+    <p><strong>Definición:</strong>Es una representación gráfica simple y reconocible que transmite de forma visual un objeto, concepto o acción para comunicar información de manera rápida y eficiente.</p>
+    <p><strong>Ejemplo:</strong>Una manzana es un ícono porque tiene semejanza física con el objeto real: la ves y reconoces de inmediato que es una manzana porque se ve idéntica a una.</p>
+  </div>
+  <div class="term-visual">
+    <img src="icono.svg" alt="Ejemplo visual: Ícono">
+  </div>
+</section>
+
+<!-- ===================== ÍNDICE ===================== -->
+<section class="term-section" id="indice">
+  <div class="term-text">
+    <h1 class="term-title">Índice</h1>
+    <p><strong>Definición:</strong>Es una señal o un signo que muestra, indica o permite conocer la existencia de otra cosa a través de una relación de causa y efecto o de continuidad.</p>
+    <p><strong>Ejemplo:</strong>El humo saliendo de una chimenea es un índice de fuego o combustión, ya que existe una relación física de causa y efecto: el humo no se parece al fuego ni es una convención arbitraria, sino que revela directamente su presencia.</p>
+  </div>
+  <div class="term-visual">
+    <img src="indice.svg" alt="Ejemplo visual: Índice">
+  </div>
+</section>
+
+<!-- ===================== INTERPRETACIÓN ===================== -->
+<section class="term-section" id="interpretacion">
+  <div class="term-text">
+    <h1 class="term-title">Interpretación</h1>
+    <p><strong>Definición:</strong>Es el proceso mental mediante el cual una persona atribuye un significado o sentido determinado a un signo, mensaje, texto, imagen o acontecimiento.</p>
+    <p><strong>Ejemplo:</strong>Al ver a una persona en la calle sosteniendo un paraguas abierto bajo un cielo nublado, la conclusión de que "ya está lloviendo" o "va a caer un fuerte aguacero" no es el paraguas ni la nube en sí, sino el sentido lógico que tu mente le da a esa escena al unir todas las pistas visuales.</p>
+  </div>
+  <div class="term-visual">
+    <img src="Interpretacion.svg" alt="Ejemplo visual: Interpretación">
+  </div>
+</section>
+
+<!-- ===================== INTERPRETANTE ===================== -->
+<section class="term-section" id="interpretante">
+  <div class="term-text">
+    <h1 class="term-title">Interpretante</h1>
+    <p><strong>Definición:</strong>Es el significado o la idea que se forma en la mente de la persona al ver un elemento visual. No es la persona en sí, sino el concepto que despierta un color, una forma o un logotipo.</p>
+    <p><strong>Ejemplo:</strong>Al ver una corona de oro, la idea de "poder, riqueza o realeza" no es el objeto ni el metal en sí, sino el concepto de prestigio y autoridad que se activa inmediatamente en tu mente.</p>
+  </div>
+  <div class="term-visual">
+    <img src="interpretante.svg" alt="Ejemplo visual: Interpretante">
+  </div>
+</section>
+
+<!-- ===================== LENGUAJE ===================== -->
+<section class="term-section" id="lenguaje">
+  <div class="term-text">
+    <h1 class="term-title">Lenguaje</h1>
+    <p><strong>Definición:</strong>Es la facultad o capacidad propia del ser humano para expresar pensamientos, emociones e ideas mediante un sistema de signos (orales, escritos o gestuales).</p>
+    <p><strong>Ejemplo:</strong>Un árbitro levantando una tarjeta roja durante un partido de fútbol es un ejemplo de lenguaje, ya que utiliza un signo visual comprendido por todos para expresar la orden de expulsión sin decir una sola palabra.</p>
+  </div>
+  <div class="term-visual">
+    <img src="lenguaje.svg" alt="Ejemplo visual: Lenguaje">
+  </div>
+</section>
+
+<!-- ===================== LOGOTIPOS ===================== -->
+<section class="term-section" id="logotipos">
+  <div class="term-text">
+    <h1 class="term-title">Logotipos</h1>
+    <p><strong>Definición:</strong>Es el diseño gráfico que representa la identidad visual de una marca, empresa o persona. Es la imagen o símbolo que permite reconocerla y diferenciarla del resto.</p>
+    <p><strong>Ejemplo:</strong>La palabra "Coca-Cola" escrita en su tipografía cursiva característica. Por qué es un logotipo: porque está compuesto únicamente por texto (letras y tipografía).</p>
+  </div>
+  <div class="term-visual">
+    <img src="Logotiposs.svg" alt="Ejemplo visual: Logotipos">
+  </div>
+</section>
+
+<!-- ===================== MARCAS ===================== -->
+<section class="term-section" id="marcas">
+  <div class="term-text">
+    <h1 class="term-title">Marcas</h1>
+    <p><strong>Definición:</strong>Es el identificador único (nombre, término, signo, diseño o combinación de ellos) que representa a un producto, servicio, empresa o persona, diferenciándolo de sus competidores en el mercado.</p>
+    <p><strong>Ejemplo:</strong>La palabra "Nike" acompañada de su ícono de flecha (swoosh) no es solo un nombre de calzado, sino que identifica a la empresa y sus productos deportivos, transmitiendo la idea de alto rendimiento y estilo de vida activo para diferenciarse de otras empresas en el mercado.</p>
+  </div>
+  <div class="term-visual">
+    <img src="marcas.svg" alt="Ejemplo visual: Marcas">
+  </div>
+</section>
+
+<!-- ===================== MENSAJE ===================== -->
+<section class="term-section" id="mensaje">
+  <div class="term-text">
+    <h1 class="term-title">Mensaje</h1>
+    <p><strong>Definición:</strong>Un mensaje es el conjunto de información, ideas, datos o sentimientos que un emisor transmite a un receptor a través de un canal o medio específico.</p>
+    <p><strong>Ejemplo:</strong>Una señal de tránsito con el número "60" dentro de un círculo rojo es el mensaje, ya que contiene la indicación exacta sobre el límite de velocidad permitido que la autoridad vial (emisor) transmite a los conductores (receptores) a través de la placa (canal).</p>
+  </div>
+  <div class="term-visual">
+    <img src="mensaje.svg" alt="Ejemplo visual: Mensaje">
+  </div>
+</section>
+
+<!-- ===================== PICTOGRAMAS ===================== -->
+<section class="term-section" id="pictogramas">
+  <div class="term-text">
+    <h1 class="term-title">Pictogramas</h1>
+    <p><strong>Definición:</strong>Es un signo o dibujo figurativo simplificado que representa de forma directa un objeto, concepto, lugar o acción real mediante una imagen esquemática, sin necesidad de utilizar palabras.</p>
+    <p><strong>Ejemplo:</strong>El dibujo de un tenedor y un cuchillo en la carretera o en una plaza de comidas representa directamente un restaurante o zona de alimentos, comunicando el lugar sin necesidad de escribir la palabra.</p>
+  </div>
+  <div class="term-visual">
+    <img src="pictogramas.svg" alt="Ejemplo visual: Pictogramas">
+  </div>
+</section>
+
+<!-- ===================== RECEPTOR ===================== -->
+<section class="term-section" id="receptor">
+  <div class="term-text">
+    <h1 class="term-title">Receptor</h1>
+    <p><strong>Definición:</strong>Es el individuo, colectivo o sistema que recibe e interpreta el mensaje enviado por el emisor dentro del proceso de comunicación.</p>
+    <p><strong>Ejemplo:</strong>El lector de un libro: procesa las palabras escritas por el autor para comprender la historia.</p>
+  </div>
+  <div class="term-visual">
+    <img src="receptor.svg" alt="Ejemplo visual: Receptor">
+  </div>
+</section>
+
+<!-- ===================== REFERENTE ===================== -->
+<section class="term-section" id="referente">
+  <div class="term-text">
+    <h1 class="term-title">Referente</h1>
+    <p><strong>Definición:</strong>Es el objeto, ser, hecho o realidad real o imaginaria a la que alude o remite un signo, una palabra o un mensaje.</p>
+    <p><strong>Ejemplo:</strong>El perro de carne y hueso que ladra en el patio de tu casa no es la palabra "p-e-r-r-o" ni la idea mental que tienes de él, sino el animal real al que remite esa palabra o su foto cuando hablas de él.</p>
+  </div>
+  <div class="term-visual">
+    <img src="referente.svg" alt="Ejemplo visual: Referente">
+  </div>
+</section>
+
+<!-- ===================== SEMIOSIS ===================== -->
+<section class="term-section" id="semiosis">
+  <div class="term-text">
+    <h1 class="term-title">Semiosis</h1>
+    <p><strong>Definición:</strong>Es el proceso dinámico mediante el cual un signo adquiere significado para alguien. No es un objeto ni un estado estático, sino una acción o relación triádica donde un elemento remite a otro en la mente de un intérprete.</p>
+    <p><strong>Ejemplo:</strong></p>
+    <ul>
+      <li>Representamen (Signo): el sonido de una sirena de ambulancia en la calle.</li>
+      <li>Objeto: un vehículo de emergencia en ruta con un paciente en estado crítico.</li>
+      <li>Interpretante: la idea mental "debemos ceder el paso a la ambulancia".</li>
+    </ul>
+  </div>
+  <div class="term-visual">
+    <img src="semiosis.svg" alt="Ejemplo visual: Semiosis">
+  </div>
+</section>
+
+<!-- ===================== SEMIÓTICA ===================== -->
+<section class="term-section" id="semiotica">
+  <div class="term-text">
+    <h1 class="term-title">Semiótica</h1>
+    <p><strong>Definición:</strong>La semiótica es la ciencia que estudia los signos y la comunicación, analizando cómo creamos e interpretamos el significado de las cosas.</p>
+    <p><strong>Ejemplo:</strong>Un semáforo en rojo puede funcionar como un signo que comunica la acción de detenerse. Es un ejemplo de cómo un elemento visual puede transmitir un significado dentro de un sistema de reglas compartidas.</p>
+  </div>
+  <div class="term-visual">
+    <img src="semiotica.svg" alt="Ejemplo visual: Semiótica">
+  </div>
+</section>
+
+<!-- ===================== SEÑALÉTICA ===================== -->
+<section class="term-section" id="senaletica">
+  <div class="term-text">
+    <h1 class="term-title">Señalética</h1>
+    <p><strong>Definición:</strong>Es una disciplina del diseño gráfico que sintetiza y organiza símbolos, colores, pictogramas y tipografías para guiar, orientar e informar a las personas dentro de un espacio físico o digital.</p>
+    <p><strong>Ejemplo:</strong>Los letreros de los baños o las flechas de salida en un centro comercial son señales de señalética que te guían de inmediato para saber hacia dónde caminar sin perderte.</p>
+  </div>
+  <div class="term-visual">
+    <img src="señaletica.svg" alt="Ejemplo visual: Señalética">
+  </div>
+</section>
+
+<!-- ===================== SIGNIFICADO ===================== -->
+<section class="term-section" id="significado">
+  <div class="term-text">
+    <h1 class="term-title">Significado</h1>
+    <p><strong>Definición:</strong>Es el concepto o la idea mental que nos viene a la cabeza al escuchar o ver algo. Es la representación abstracta de la cosa.</p>
+    <p><strong>Ejemplo:</strong>La idea de un animal doméstico de cuatro patas que ladra y es leal es el significado que se forma en tu mente inmediatamente al ver la foto de un perro o al escuchar su nombre.</p>
+  </div>
+  <div class="term-visual">
+    <img src="significado.svg" alt="Ejemplo visual: Significado">
+  </div>
+</section>
+
+<!-- ===================== SIGNIFICANTE ===================== -->
+<section class="term-section" id="significante">
+  <div class="term-text">
+    <h1 class="term-title">Significante</h1>
+    <p><strong>Definición:</strong>Es la forma material o la huella sonora —sonido, secuencia de letras o imagen— que usamos para expresar esa idea.</p>
+    <p><strong>Ejemplo:</strong>Las cuatro letras P-E-R-R-O escritas con tinta sobre una hoja de papel es la forma visual concreta que tus ojos perciben para identificar ese significante.</p>
+  </div>
+  <div class="term-visual">
+    <img src="significante.svg" alt="Ejemplo visual: Significante">
+  </div>
+</section>
+
+<!-- ===================== SIGNO ===================== -->
+<section class="term-section" id="signo">
+  <div class="term-text">
+    <h1 class="term-title">Signo</h1>
+    <p><strong>Definición:</strong>Un signo es cualquier objeto, imagen, palabra o gesto que representa algo diferente de sí mismo para transmitir una idea o mensaje.</p>
+    <p><strong>Ejemplo:</strong>La palabra "alto" dicha en voz alta o escrita en un letrero funciona como un signo verbal que comunica la instrucción de detenerse, transmitiendo un mensaje directo mediante una regla del idioma español compartida entre el emisor y el receptor.</p>
+  </div>
+  <div class="term-visual">
+    <img src="signo.svg" alt="Ejemplo visual: Signo">
+  </div>
+</section>
+
+<!-- ===================== SÍMBOLO ===================== -->
+<section class="term-section" id="simbolo">
+  <div class="term-text">
+    <h1 class="term-title">Símbolo</h1>
+    <p><strong>Definición:</strong>Es un tipo de signo que representa una idea, un valor o un concepto de forma abstracta, basado en una convención o acuerdo social y no en un parecido físico.</p>
+    <p><strong>Ejemplo:</strong>Una paloma blanca con una rama de olivo en el pico funciona como el símbolo universal de la paz, ya que no existe una relación física directa entre el ave y la paz, sino que la sociedad ha acordado asignarle ese significado abstracto.</p>
+  </div>
+  <div class="term-visual">
+    <img src="simbolo.svg" alt="Ejemplo visual: Símbolo">
+  </div>
+</section>
+
+<!-- ===================== SISTEMA DE SIGNOS ===================== -->
+<section class="term-section" id="sistema-de-signos">
+  <div class="term-text">
+    <h1 class="term-title">Sistema de signos</h1>
+    <p><strong>Definición:</strong>Es un conjunto organizado de elementos (signos) que se relacionan entre sí mediante reglas fijas o convenciones compartidas para transmitir significados y permitir la comunicación.</p>
+    <p><strong>Ejemplo:</strong>El sistema del alfabeto braille es un sistema de signos donde combinaciones específicas de puntos en relieve siguen reglas fijas para representar cada letra del abecedario, permitiendo transmitir y leer mensajes a través del tacto.</p>
+  </div>
+  <div class="term-visual">
+    <img src="sistemas de signos.svg" alt="Ejemplo visual: Sistema de signos">
+  </div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
