@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Ferdinand de Saussure - SIGNIA</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Inter:wght@400;500;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="nav">
+  <div class="brandmark">
+    <img src="Logo.svg" alt="Logo">
+  </div>
+
+  <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+
+  <nav class="links" id="navLinks">
+    <a href="index.html">Inicio</a>
+    <a href="acerca.html">Acerca</a>
+
+    <div class="dropdown">
+      <a href="contenido.html" class="dropdown-toggle" aria-expanded="false">
+        Contenido
+        <svg class="dropdown-arrow" width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+      <div class="dropdown-menu">
+
+        <a href="conceptos-semioticos.html" class="dropdown-link">Conceptos semióticos</a>
+
+        <div class="dropdown-sub">
+          <span class="dropdown-subtitle">Filósofos de la semiótica</span>
+          <a href="charles-sanders-peirce.html">Charles Sanders Peirce</a>
+          <a href="ferdinand-de-saussure.html">Ferdinand de Saussure</a>
+          <a href="roland-barthes.html">Roland Barthes</a>
+          <a href="umberto-eco.html">Umberto Eco</a>
+                    <a href="conceptos-de-publicidad.html">Conceptos de publicidad</a>
+        </div>
+
+        <div class="dropdown-sub">
+  <span class="dropdown-subtitle">Arquetipos</span>
+  <a href="arquetipos.html#el-amante">El Amante</a>
+  <a href="arquetipos.html#el-amigo">El Amigo</a>
+  <a href="arquetipos.html#el-bufon">El Bufón</a>
+  <a href="arquetipos.html#el-creador">El Creador</a>
+  <a href="arquetipos.html#el-cuidador">El Cuidador</a>
+  <a href="arquetipos.html#el-explorador">El Explorador</a>
+  <a href="arquetipos.html#el-gobernante">El Gobernante</a>
+  <a href="arquetipos.html#el-heroe">El Héroe</a>
+  <a href="arquetipos.html#el-inocente">El Inocente</a>
+  <a href="arquetipos.html#el-mago">El Mago</a>
+  <a href="arquetipos.html#el-rebelde">El Rebelde</a>
+  <a href="arquetipos.html#el-sabio">El Sabio</a>
+</div>
+
+      </div>
+    </div>
+
+    <a href="universo.html">Universo de Signia</a>
+    <a href="marcas.html">10 Marcas</a>
+    <a href="otros.html">Otros</a>
+  </nav>
+
+  <div class="nav-spacer"></div>
+</header>
+
+<!-- ===================== ÍNDICE ===================== -->
+<section class="contenido-section" id="indice">
+
+  <div class="contenido-left">
+    <h1 class="contenido-title">Conceptos de Ferdinand de Saussure</h1>
+
+    <div class="glossary-columns">
+
+      <div class="glossary-group">
+        <span class="letter">A</span>
+        <ul>
+          <li><a href="#arbitrariedad">Arbitrariedad</a></li>
+        </ul>
+      </div>
+
+      <div class="glossary-group">
+        <span class="letter">D</span>
+        <ul>
+          <li><a href="#diacronia">Diacronía</a></li>
+        </ul>
+      </div>
+
+      <div class="glossary-group">
+        <span class="letter">H</span>
+        <ul>
+          <li><a href="#habla">Habla</a></li>
+        </ul>
+      </div>
+
+      <div class="glossary-group">
+        <span class="letter">L</span>
+        <ul>
+          <li><a href="#lengua">Lengua</a></li>
+          <li><a href="#linealidad">Linealidad</a></li>
+        </ul>
+      </div>
+
+      <div class="glossary-group">
+        <span class="letter">R</span>
+        <ul>
+          <li><a href="#relaciones-paradigmaticas">Relaciones paradigmáticas</a></li>
+          <li><a href="#relaciones-sintagmaticas">Relaciones sintagmáticas</a></li>
+        </ul>
+      </div>
+
+      <div class="glossary-group">
+        <span class="letter">S</span>
+        <ul>
+          <li><a href="#significado">Significado</a></li>
+          <li><a href="#significante">Significante</a></li>
+          <li><a href="#signo-linguistico">Signo lingüístico</a></li>
+          <li><a href="#sincronia">Sincronía</a></li>
+        </ul>
+      </div>
+
+      <div class="glossary-group">
+        <span class="letter">V</span>
+        <ul>
+          <li><a href="#valor">Valor</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="contenido-mascots">
+    <img src="ferdin.svg" alt="Ferdinand de Saussure con los personajes de Signia">
+  </div>
+
+</section>
+
+<!-- ===================== ARBITRARIEDAD ===================== -->
+<section class="term-section" id="arbitrariedad">
+  <div class="term-text">
+    <h1 class="term-title">Arbitrariedad</h1>
+    <p><strong>Definición:</strong>Significa que no existe una relación natural entre el significante y el significado.</p>
+    <p><strong>Ejemplo:</strong>A un animal cuadrúpedo que ladra se le llama "perro" en español, "dog" en inglés y "chien" en francés ninguna de estas palabras tiene un vínculo físico o directo con el animal.</p>
+  </div>
+  <div class="term-visual">
+    <img src="arbietrariedad2.svg" alt="Ejemplo visual: Arbitrariedad">
+  </div>
+</section>
+
+<!-- ===================== DIACRONÍA ===================== -->
+<section class="term-section" id="diacronia">
+  <div class="term-text">
+    <h1 class="term-title">Diacronía</h1>
+    <p><strong>Definición:</strong>Estudia la lengua a través del tiempo, observando sus cambios y evolución histórica.</p>
+    <p><strong>Ejemplo:</strong>Estudiar cómo la palabra latina "filius" evolucionó a lo largo de los siglos hasta convertirse en "hijo" en el español actual.</p>
+  </div>
+  <div class="term-visual">
+    <img src="diacronia2.svg" alt="Ejemplo visual: Diacronía">
+  </div>
+</section>
+
+<!-- ===================== HABLA ===================== -->
+<section class="term-section" id="habla">
+  <div class="term-text">
+    <h1 class="term-title">Habla</h1>
+    <p><strong>Definición:</strong>La ejecución individual, concreta y voluntaria del sistema de la lengua por parte de un hablante en un momento dado.</p>
+    <p><strong>Ejemplo:</strong>La forma exacta, con su tono de voz, pronunciación y ritmo, en la que tú dices la frase "Hola, ¿cómo estás?" en este instante.</p>
+  </div>
+  <div class="term-visual">
+    <img src="habla.svg" alt="Ejemplo visual: Habla">
+  </div>
+</section>
+
+<!-- ===================== LENGUA ===================== -->
+<section class="term-section" id="lengua">
+  <div class="term-text">
+    <h1 class="term-title">Lengua</h1>
+    <p><strong>Definición:</strong>Es el sistema social de signos y reglas compartido por una comunidad de hablantes.</p>
+    <p><strong>Ejemplo:</strong>El idioma español con su vocabulario y sus reglas de gramática que compartimos todos los hispanohablantes.</p>
+  </div>
+  <div class="term-visual">
+    <img src="lengua2.svg" alt="Ejemplo visual: Lengua">
+  </div>
+</section>
+
+<!-- ===================== LINEALIDAD ===================== -->
+<section class="term-section" id="linealidad">
+  <div class="term-text">
+    <h1 class="term-title">Linealidad</h1>
+    <p><strong>Definición:</strong>Característica del significante de desenvolverse exclusivamente en la dimensión del tiempo. Los sonidos o letras se emiten uno tras otro en una secuencia lineal sin poder superponerse.</p>
+    <p><strong>Ejemplo:</strong>Para pronunciar la palabra "sol", debes decir primero la /s/, luego la /o/ y finalmente la /l/; no se pueden emitir todos los sonidos al mismo tiempo.</p>
+  </div>
+  <div class="term-visual">
+    <img src="linealidad.svg" alt="Ejemplo visual: Linealidad">
+  </div>
+</section>
+
+<!-- ===================== RELACIONES PARADIGMÁTICAS ===================== -->
+<section class="term-section" id="relaciones-paradigmaticas">
+  <div class="term-text">
+    <h1 class="term-title">Relaciones paradigmáticas</h1>
+    <p><strong>Definición:</strong>Relaciones de sustitución en "ausencia" (in absentia) entre elementos lingüísticos que comparten la misma categoría o función y que podrían ocupar la misma posición en una oración.</p>
+    <p><strong>Ejemplo:</strong>En la oración "El gato duerme", puedes sustituir "gato" por "perro", "niño" o "león". Esos términos forman un paradigma.</p>
+  </div>
+  <div class="term-visual">
+    <img src="relacionesparadiagmaticas.svg" alt="Ejemplo visual: Relaciones paradigmáticas">
+  </div>
+</section>
+
+<!-- ===================== RELACIONES SINTAGMÁTICAS ===================== -->
+<section class="term-section" id="relaciones-sintagmaticas">
+  <div class="term-text">
+    <h1 class="term-title">Relaciones sintagmáticas</h1>
+    <p><strong>Definición:</strong>Relaciones de combinación en "presencia" (in praesentia) que se establecen entre los signos que se alinean uno tras otro formando una cadena de palabras (sintagma).</p>
+    <p><strong>Ejemplo:</strong>La secuencia exacta de palabras "El perro negro corre rápido", donde la posición y concordancia de cada palabra depende de las otras en la frase.</p>
+  </div>
+  <div class="term-visual">
+    <img src="rELACIONES SINTAGMÁTICAS.svg" alt="Ejemplo visual: Relaciones sintagmáticas">
+  </div>
+</section>
+
+<!-- ===================== SIGNIFICADO ===================== -->
+<section class="term-section" id="significado">
+  <div class="term-text">
+    <h1 class="term-title">Significado</h1>
+    <p><strong>Definición:</strong>El concepto, la idea o la representación mental a la que remite un signo lingüístico.</p>
+    <p><strong>Ejemplo:</strong>La representación mental o idea de un mueble compuesto por una superficie plana sostenida por patas que sirve para comer o escribir.</p>
+  </div>
+  <div class="term-visual">
+    <img src="significado2.svg" alt="Ejemplo visual: Significado">
+  </div>
+</section>
+
+<!-- ===================== SIGNIFICANTE ===================== -->
+<section class="term-section" id="significante">
+  <div class="term-text">
+    <h1 class="term-title">Significante</h1>
+    <p><strong>Definición:</strong>La imagen acústica o la representación mental de la forma sonora (o gráfica) de la palabra.</p>
+    <p><strong>Ejemplo:</strong>La huella psíquica de la secuencia de sonidos /m-e-s-a/ al escucharla o pensarla.</p>
+  </div>
+  <div class="term-visual">
+    <img src="significante2.svg" alt="Ejemplo visual: Significante">
+  </div>
+</section>
+
+<!-- ===================== SIGNO LINGÜÍSTICO ===================== -->
+<section class="term-section" id="signo-linguistico">
+  <div class="term-text">
+    <h1 class="term-title">Signo lingüístico</h1>
+    <p><strong>Definición:</strong>Unidad psíquica indisoluble formada por la unión de una imagen acústica (significante) y un concepto (significado).</p>
+    <p><strong>Ejemplo:</strong>La unión indivisible entre la idea de "árbol" (significado) y la representación sonora /á-r-b-o-l/ (significante).</p>
+  </div>
+  <div class="term-visual">
+    <img src="SIGNO LINGüíSTICO2.svg" alt="Ejemplo visual: Signo lingüístico">
+  </div>
+</section>
+
+<!-- ===================== SINCRONÍA ===================== -->
+<section class="term-section" id="sincronia">
+  <div class="term-text">
+    <h1 class="term-title">Sincronía</h1>
+    <p><strong>Definición:</strong>Estado o enfoque de la lengua analizado en un momento determinado del tiempo, considerando el sistema como un todo coherente sin importar su historia previa.</p>
+    <p><strong>Ejemplo:</strong>Analizar las reglas de la gramática y el vocabulario del español actual tal como se habla en el año 2026.</p>
+  </div>
+  <div class="term-visual">
+    <img src="Sincronía2.svg" alt="Ejemplo visual: Sincronía">
+  </div>
+</section>
+
+<!-- ===================== VALOR ===================== -->
+<section class="term-section" id="valor">
+  <div class="term-text">
+    <h1 class="term-title">Valor</h1>
+    <p><strong>Definición:</strong>La propiedad de un signo que queda determinada no por su contenido intrínseco, sino por sus diferencias y relaciones con los demás signos dentro del mismo sistema.</p>
+    <p><strong>Ejemplo:</strong>En español, la palabra "pez" (animal vivo en el agua) se diferencia de "pescado" (animal capturado). Su valor radica en la distinción que existe frente al otro término del sistema.</p>
+  </div>
+  <div class="term-visual">
+    <img src="valor2.svg" alt="Ejemplo visual: Valor">
+  </div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
