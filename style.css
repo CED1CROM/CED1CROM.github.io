@@ -1,0 +1,809 @@
+@font-face{
+  font-family:'Decalotype';
+  src:url('decalotype.regular.otf') format('opentype'),
+      url('decalotype.regular.ttf') format('truetype');
+  font-weight:400;
+  font-style:normal;
+}
+
+:root{
+  --ink:#131211;
+  --paper:#ffffff;
+  --nav-bg:#e7e5e0;
+  --box-bg:#c9c8c5;
+  --water:#000000;
+}
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+html,body{margin:0;padding:0;}
+body{
+  background-color:var(--paper);
+  background-image:url('Fondo1.svg');
+  background-repeat:repeat-y;
+  background-position:center top;
+  background-size:100% auto;
+  color:var(--ink);
+  font-family:'Inter',sans-serif;
+  min-height:100vh;
+  overflow-x:hidden;
+}
+
+/* Ancla de scroll: que los enlaces #id no queden tapados por el menú fijo */
+[id]{scroll-margin-top:90px;}
+
+/* Regla general: ninguna imagen/SVG se desborda de su contenedor */
+img, svg{
+  max-width:100%;
+  height:auto;
+}
+
+/* ---------- NAV ---------- */
+header.nav{
+  background:var(--nav-bg);
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:10px 48px;
+  position:sticky;
+  top:0;
+  z-index:10;
+  gap:20px;
+  flex-wrap:nowrap;
+}
+.brandmark{
+  display:flex;
+  align-items:center;
+  flex-shrink:0;
+  width:70px;
+}
+.brandmark img{
+  width:100%;
+  height:auto;
+  display:block;
+}
+
+.nav-spacer{
+  width:70px;
+  flex-shrink:0;
+}
+
+.menu-toggle{
+  display:none;
+  flex-direction:column;
+  gap:5px;
+  background:none;
+  border:none;
+  cursor:pointer;
+  padding:6px;
+  flex-shrink:0;
+}
+.menu-toggle span{
+  width:24px;
+  height:2px;
+  background:var(--ink);
+}
+
+nav.links{
+  display:flex;
+  gap:40px;
+  flex:1;
+  justify-content:center;
+}
+nav.links a{
+  color:var(--ink);
+  text-decoration:none;
+  font-size:14px;
+  font-weight:500;
+  opacity:.85;
+  transition:opacity .15s ease;
+  white-space:nowrap;
+}
+nav.links a:hover{opacity:1;}
+
+/* ---------- HERO ---------- */
+main.hero{
+  position:relative;
+  z-index:2;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  text-align:center;
+  padding:60px 24px 50px;
+}
+
+.wordmark-svg{
+  width:100%;
+  max-width:820px;
+  height:auto;
+}
+p.tagline{
+  font-family:'Playfair Display',serif;
+  font-weight:600;
+  font-size:clamp(11px,2.2vw,15px);
+  letter-spacing:2px;
+  margin:22px 0 0;
+  font-variant:small-caps;
+  padding:0 10px;
+}
+.mascots{
+  margin-top:40px;
+  width:100%;
+  max-width:520px;
+}
+.mascots img{
+  width:100%;
+  height:auto;
+  display:block;
+}
+
+/* ---------- SECCIÓN ¿QUÉ ES SIGNIA? ---------- */
+.info-section{
+  position:relative;
+  z-index:2;
+  padding:70px 24px 60px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  text-align:center;
+}
+.info-title{
+  font-family:'Decalotype',sans-serif;
+  font-weight:400;
+  font-size:clamp(28px,5.5vw,52px);
+  letter-spacing:-1px;
+  margin:0 0 40px;
+  color:var(--ink);
+}
+.info-box{
+  background:var(--box-bg);
+  border-radius:20px;
+  max-width:680px;
+  width:100%;
+  padding:26px 34px;
+  margin-bottom:22px;
+}
+.info-box p{
+  margin:0;
+  font-size:clamp(13px,2.2vw,15px);
+  line-height:1.7;
+  color:var(--ink);
+}
+
+/* ---------- SECCIÓN EL UNIVERSO SIGNIA ---------- */
+.universe-section{
+  position:relative;
+  z-index:2;
+  padding:20px 24px 100px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  text-align:center;
+}
+.universe-title{
+  font-family:'Decalotype',sans-serif;
+  font-weight:400;
+  font-size:clamp(24px,4.5vw,40px);
+  letter-spacing:-1px;
+  margin:0 0 45px;
+  color:var(--ink);
+}
+.universe-grid{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:36px;
+  max-width:1000px;
+  width:100%;
+}
+.universe-card{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  width:220px;
+  max-width:100%;
+}
+.character-box{
+  width:100%;
+  aspect-ratio:1/1;
+  background:var(--paper);
+  border:1.5px solid var(--ink);
+  border-radius:18px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:20px;
+  margin-bottom:16px;
+}
+.character-box img{
+  width:100%;
+  height:100%;
+  object-fit:contain;
+  object-position:bottom center;
+}
+.character-desc{
+  font-size:12.5px;
+  line-height:1.5;
+  color:#4a4a4a;
+  margin:0 0 8px;
+  max-width:200px;
+}
+.character-name{
+  font-weight:800;
+  font-size:15px;
+  letter-spacing:1px;
+  margin:0;
+}
+
+/* ---------- SECCIÓN ¿TIENES PREGUNTAS? ---------- */
+.contact-section{
+  position:relative;
+  z-index:2;
+  background:var(--paper);
+  padding:60px 24px 70px;
+  text-align:center;
+}
+.contact-title{
+  font-family:'Decalotype',sans-serif;
+  font-weight:400;
+  font-size:clamp(32px,7vw,72px);
+  letter-spacing:-1px;
+  margin:0 0 50px;
+  color:var(--ink);
+}
+.contact-grid{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:space-between;
+  gap:24px;
+  max-width:1000px;
+  margin:0 auto;
+  text-align:left;
+}
+.contact-col{
+  flex:0 1 auto;   /* ya NO se estira a ocupar 1/3 igual: usa el ancho de su contenido */
+  min-width:200px;
+}
+/* space-between ahora sí tiene espacio libre real para repartir entre las columnas */
+.contact-heading{
+  font-size:20px;
+  font-weight:600;
+  margin:0 0 6px;
+}
+.contact-line{
+  font-size:13px;
+  color:#333;
+  margin:0 0 4px;
+  line-height:1.5;
+}
+
+/* ---------- PÁGINA ACERCA ---------- */
+.acerca-section{
+  background-color:#0d0d0d;
+  background-image:url('Fondo2.svg');
+  background-repeat:repeat-y;
+  background-position:center top;
+  background-size:100% auto;
+  color:#ffffff;
+  min-height:calc(100vh - 60px);
+  display:flex;
+  flex-wrap:wrap;
+  align-items:center;
+  gap:40px;
+  padding:60px 60px;
+}
+.acerca-text{
+  flex:1 1 320px;
+  max-width:560px;
+  position:relative;
+  z-index:2;
+}
+.acerca-title{
+  font-family:'Decalotype',sans-serif;
+  font-weight:400;
+  font-size:clamp(28px,5vw,48px);
+  letter-spacing:-1px;
+  margin:0 0 24px;
+  color:#ffffff;
+}
+.acerca-text p{
+  font-size:clamp(13px,2vw,14px);
+  line-height:1.8;
+  color:#e5e5e5;
+  margin:0 0 20px;
+}
+.acerca-image{
+  flex:1 1 280px;
+  display:flex;
+  justify-content:center;
+  position:relative;
+  z-index:2;
+}
+.acerca-image img{
+  width:100%;
+  max-width:420px;
+  height:auto;
+  display:block;
+}
+
+/* ---------- PÁGINA CONTENIDO (índice de categorías) ---------- */
+.contenido-section{
+  background-color:#0d0d0d;
+  background-image:url('Fondo2.svg');
+  background-repeat:repeat-y;
+  background-position:center top;
+  background-size:100% auto;
+  color:#ffffff;
+  min-height:calc(100vh - 60px);
+  display:flex;
+  flex-wrap:wrap;
+  align-items:flex-start;
+  gap:40px;
+  padding:50px 60px;
+}
+.contenido-left{
+  flex:2 1 500px;
+  position:relative;
+  z-index:2;
+}
+.contenido-title{
+  font-family:'Decalotype',sans-serif;
+  font-weight:400;
+  font-size:clamp(26px,4.5vw,40px);
+  letter-spacing:-1px;
+  margin:0 0 30px;
+  color:#ffffff;
+}
+
+/* Glosario alfabético (usado en conceptos-semioticos.html) */
+.glossary-columns{
+  column-count:2;
+  column-gap:50px;
+}
+.glossary-group{
+  display:flex;
+  align-items:flex-start;
+  gap:14px;
+  margin-bottom:22px;
+  break-inside:avoid;
+}
+.glossary-group .letter{
+  font-family:'Decalotype',sans-serif;
+  font-weight:400;
+  font-size:34px;
+  line-height:1;
+  color:#ffffff;
+  flex-shrink:0;
+}
+.glossary-group ul{
+  list-style:disc;
+  margin:2px 0 0;
+  padding-left:16px;
+}
+.glossary-group li{
+  font-size:13.5px;
+  line-height:1.7;
+  color:#e5e5e5;
+}
+.glossary-group li a{
+  color:#e5e5e5;
+  text-decoration:none;
+  transition:color .15s ease;
+}
+.glossary-group li a:hover{
+  color:#ffffff;
+  text-decoration:underline;
+}
+
+/* Índice de categorías (usado en contenido.html) */
+.category-list{
+  display:flex;
+  flex-direction:column;
+  gap:36px;
+  max-width:520px;
+}
+.category-group{
+  border-bottom:1px solid rgba(255,255,255,.15);
+  padding-bottom:24px;
+}
+.category-group:last-child{
+  border-bottom:none;
+  padding-bottom:0;
+}
+.category-title{
+  font-family:'Decalotype',sans-serif;
+  font-weight:400;
+  font-size:clamp(20px,3vw,26px);
+  letter-spacing:-.5px;
+  margin:0 0 14px;
+  color:#ffffff;
+}
+.category-link{
+  display:inline-block;
+  font-size:13.5px;
+  color:#e5e5e5;
+  text-decoration:none;
+  border-bottom:1px solid transparent;
+  transition:border-color .15s ease, color .15s ease;
+}
+.category-link:hover{
+  color:#ffffff;
+  border-bottom-color:#ffffff;
+}
+.category-sublist{
+  list-style:none;
+  margin:0;
+  padding:0;
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+}
+.category-sublist li a{
+  font-size:13.5px;
+  color:#e5e5e5;
+  text-decoration:none;
+  transition:color .15s ease;
+}
+.category-sublist li a:hover{
+  color:#ffffff;
+  text-decoration:underline;
+}
+
+.contenido-mascots{
+  flex:1 1 280px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  align-self:flex-end;
+  position:relative;
+  z-index:2;
+}
+.contenido-mascots img{
+  width:100%;
+  max-width:380px;
+  height:auto;
+  display:block;
+}
+
+#marcas .contenido-mascots{
+  flex:2 1 480px;
+  max-width:1000px;
+}
+#marcas .contenido-mascots img{
+  max-width:1000px;
+}
+
+/* ---------- PÁGINAS DE TÉRMINO (glosario individual) ---------- */
+.term-section{
+  background-color:#0d0d0d;
+  background-image:url('Fondo2.svg');
+  background-repeat:repeat-y;
+  background-position:center top;
+  background-size:100% auto;
+  color:#ffffff;
+  min-height:calc(100vh - 60px);
+  display:flex;
+  flex-wrap:wrap;
+  align-items:center;
+  justify-content:center;
+  gap:60px;
+  padding:60px 60px;
+}
+.term-section:not(:first-of-type){
+  border-top:1px solid rgba(255,255,255,.08);
+}
+.term-text{
+  flex:1 1 420px;
+  max-width:560px;
+  position:relative;
+  z-index:2;
+}
+.term-title{
+  font-family:'Inter',sans-serif;
+  font-weight:800;
+  font-size:clamp(24px,4vw,32px);
+  letter-spacing:.3px;
+  text-transform:uppercase;
+  margin:0 0 28px;
+  color:#ffffff;
+}
+.term-text p{
+  font-size:13.5px;
+  line-height:1.7;
+  color:#e5e5e5;
+  margin:0 0 20px;
+}
+.term-text p:last-child{
+  margin-bottom:0;
+}
+.term-text p strong{
+  display:block;
+  color:#ffffff;
+  font-weight:700;
+  margin-bottom:4px;
+}
+.term-text ul{
+  margin:-10px 0 20px;
+  padding-left:16px;
+  list-style:disc;
+}
+.term-text ul li{
+  font-size:13.5px;
+  line-height:1.7;
+  color:#e5e5e5;
+  margin-bottom:4px;
+}
+
+.term-visual{
+  flex:0 0 auto;
+  width:340px;
+  height:380px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  position:relative;
+  z-index:2;
+}
+.term-visual img,
+.term-visual svg{
+  width:100%;
+  height:100%;
+  object-fit:contain;
+  display:block;
+}
+
+/* ---------- DROPDOWN "CONTENIDO" ---------- */
+.dropdown{
+  position:relative;
+  /* este padding "rellena" el espacio hasta el panel: así el hover
+     nunca se corta al mover el cursor del link hacia el menú */
+  padding-bottom:14px;
+  margin-bottom:-14px;
+}
+.dropdown-toggle{
+  display:inline-flex;
+  align-items:center;
+  gap:6px;
+  cursor:pointer;
+}
+.dropdown-arrow{
+  transition:transform .2s ease;
+  color:var(--ink);
+  opacity:.7;
+}
+.dropdown-menu{
+  position:absolute;
+  top:100%;                 /* pegado al padding del contenedor, sin salto */
+  left:50%;
+  transform:translateX(-50%) translateY(6px);
+  background:var(--paper);
+  border:1px solid rgba(0,0,0,.08);
+  border-radius:16px;
+  box-shadow:0 16px 40px rgba(0,0,0,.14);
+  padding:22px 26px;
+  width:min(560px, 92vw);   /* nunca se desborda en pantallas angostas */
+  max-height:min(70vh, 560px);
+  overflow-y:auto;
+  display:grid;
+  grid-template-columns:1fr 1fr 1fr;
+  gap:28px;
+  opacity:0;
+  visibility:hidden;
+  pointer-events:none;
+  transition:opacity .18s ease, transform .18s ease, visibility .18s;
+  z-index:30;
+}
+.dropdown-menu > .dropdown-link{
+  font-weight:700;
+  font-size:13.5px;
+  color:var(--ink);
+  text-decoration:none;
+  opacity:.9;
+}
+.dropdown-sub{
+  display:flex;
+  flex-direction:column;
+  gap:9px;
+}
+.dropdown-subtitle{
+  font-size:11px;
+  font-weight:700;
+  letter-spacing:.5px;
+  text-transform:uppercase;
+  color:#8a8a86;
+  margin-bottom:2px;
+}
+.dropdown-sub a,
+.dropdown-menu > .dropdown-link{
+  font-size:13px;
+  color:var(--ink);
+  text-decoration:none;
+  opacity:.8;
+  transition:opacity .15s ease;
+}
+.dropdown-sub a:hover,
+.dropdown-menu > .dropdown-link:hover{
+  opacity:1;
+  text-decoration:underline;
+}
+
+/* se abre con hover/foco en escritorio, o con la clase .open (JS) en móvil */
+.dropdown:hover .dropdown-menu,
+.dropdown:focus-within .dropdown-menu,
+.dropdown.open .dropdown-menu{
+  opacity:1;
+  visibility:visible;
+  pointer-events:auto;
+  transform:translateX(-50%) translateY(0);
+}
+.dropdown:hover .dropdown-arrow,
+.dropdown:focus-within .dropdown-arrow,
+.dropdown.open .dropdown-arrow{
+  transform:rotate(180deg);
+}
+
+/* ---------- ÍNDICE "10 MARCAS" ---------- */
+.marcas-columns{
+  display:flex;
+  flex-direction:column;
+  gap:22px;
+}
+
+/* ---------- FICHAS DE MARCA (10 Marcas) ---------- */
+.marca-section{
+  background-color:#0d0d0d;
+  background-image:url('Fondo2.svg');
+  background-repeat:repeat-y;
+  background-position:center top;
+  background-size:100% auto;
+  min-height:calc(100vh - 60px);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:60px 40px;
+}
+.marca-section:not(:first-of-type){
+  border-top:1px solid rgba(255,255,255,.08);
+}
+.marca-diagram-img{
+  width:100%;
+  max-width:1000px;
+  height:auto;
+  display:block;
+}
+
+/* =====================================================
+   RESPONSIVE — se aplica a TODAS las páginas del sitio
+===================================================== */
+
+@media (max-width:1024px){
+  header.nav{padding:10px 32px;}
+  nav.links{gap:24px;}
+  .universe-grid{gap:26px;}
+  .acerca-section{padding:50px 40px;}
+  .term-section{padding:50px 40px; gap:40px;}
+  .marca-section{padding:50px 32px;}
+
+  /* pantallas medianas (tablets en horizontal / laptops chicas):
+     3 columnas se ven apretadas, pasamos a 2 */
+  .dropdown-menu{
+    grid-template-columns:1fr 1fr;
+  }
+}
+
+@media (max-width:768px){
+  header.nav{padding:10px 20px;}
+  .menu-toggle{display:flex;}
+  .nav-spacer{display:none;}
+
+  nav.links{
+    position:absolute;
+    top:100%;
+    left:0;
+    right:0;
+    background:var(--nav-bg);
+    flex-direction:column;
+    align-items:center;
+    gap:0;
+    max-height:0;
+    overflow:hidden;
+    transition:max-height .3s ease;
+  }
+  nav.links.open{
+    max-height:calc(100vh - 60px);
+    overflow-y:auto;
+    -webkit-overflow-scrolling:touch;
+  }
+  nav.links a{
+    padding:12px 0;
+    width:100%;
+    text-align:center;
+  }
+
+  main.hero{padding:40px 20px 40px;}
+  .info-section{padding:50px 20px 40px;}
+  .info-box{padding:20px 22px;}
+  .universe-section{padding:10px 20px 70px;}
+  .universe-grid{gap:24px;}
+  .universe-card{width:150px;}
+  .contact-section{padding:40px 20px 50px;}
+  .contact-grid{
+    flex-direction:column;
+    text-align:center;
+  }
+  .acerca-section{
+    padding:40px 24px;
+    flex-direction:column;
+    text-align:left;
+  }
+  .contenido-section{
+    padding:40px 24px;
+    flex-direction:column;
+  }
+  .glossary-columns{
+    column-count:1;
+  }
+  .term-section{
+    padding:40px 24px;
+    flex-direction:column;
+  }
+  .term-visual{
+    width:220px;
+    height:260px;
+    order:-1;
+    margin-bottom:10px;
+  }
+  .marca-section{padding:36px 20px;}
+
+  .dropdown{
+    width:100%;
+    padding-bottom:0;
+    margin-bottom:0;
+  }
+  .dropdown-toggle{
+    width:100%;
+    justify-content:center;
+    padding:12px 0;
+  }
+  .dropdown-menu{
+    position:static;
+    transform:none;
+    width:100%;
+    max-height:none;
+    overflow-y:visible;
+    display:none;
+    grid-template-columns:1fr;
+    box-shadow:none;
+    border:none;
+    border-radius:0;
+    background:rgba(0,0,0,.03);
+    padding:6px 20px 18px;
+    opacity:1;
+    visibility:visible;
+    pointer-events:auto;
+  }
+  .dropdown.open .dropdown-menu{
+    display:flex;
+    flex-direction:column;
+    gap:18px;
+  }
+  .dropdown-sub{gap:10px;}
+}
+
+@media (max-width:480px){
+  .brandmark{width:56px;}
+  nav.links a{font-size:13px;}
+  .mascots{max-width:340px;}
+  .universe-card{width:130px;}
+  .character-box{padding:14px;}
+  .character-desc{font-size:11.5px;}
+  .contact-heading{font-size:18px;}
+  .acerca-title{text-align:center;}
+  .acerca-text{text-align:center;}
+  .glossary-group .letter{font-size:28px;}
+  .glossary-group li{font-size:12.5px;}
+  .term-title{font-size:22px;}
+  .term-visual{
+    width:190px;
+    height:220px;
+  }
+}
