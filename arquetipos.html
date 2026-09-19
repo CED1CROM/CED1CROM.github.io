@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Arquetipos según Carl Jung - SIGNIA</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Inter:wght@400;500;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="nav">
+  <div class="brandmark">
+    <img src="Logo.svg" alt="Logo">
+  </div>
+
+  <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+
+  <nav class="links" id="navLinks">
+    <a href="index.html">Inicio</a>
+    <a href="acerca.html">Acerca</a>
+
+    <div class="dropdown">
+      <a href="contenido.html" class="dropdown-toggle" aria-expanded="false">
+        Contenido
+        <svg class="dropdown-arrow" width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+      <div class="dropdown-menu">
+
+        <a href="conceptos-semioticos.html" class="dropdown-link">Conceptos semióticos</a>
+
+        <div class="dropdown-sub">
+          <span class="dropdown-subtitle">Filósofos de la semiótica</span>
+          <a href="charles-sanders-peirce.html">Charles Sanders Peirce</a>
+          <a href="ferdinand-de-saussure.html">Ferdinand de Saussure</a>
+          <a href="roland-barthes.html">Roland Barthes</a>
+          <a href="umberto-eco.html">Umberto Eco</a>
+                    <a href="conceptos-de-publicidad.html">Conceptos de publicidad</a>
+        </div>
+
+        <!-- Arquetipos configurados como anclas (#) hacia las secciones internas -->
+       <div class="dropdown-sub">
+  <span class="dropdown-subtitle">Arquetipos</span>
+  <a href="arquetipos.html#el-amante">El Amante</a>
+  <a href="arquetipos.html#el-amigo">El Amigo</a>
+  <a href="arquetipos.html#el-bufon">El Bufón</a>
+  <a href="arquetipos.html#el-creador">El Creador</a>
+  <a href="arquetipos.html#el-cuidador">El Cuidador</a>
+  <a href="arquetipos.html#el-explorador">El Explorador</a>
+  <a href="arquetipos.html#el-gobernante">El Gobernante</a>
+  <a href="arquetipos.html#el-heroe">El Héroe</a>
+  <a href="arquetipos.html#el-inocente">El Inocente</a>
+  <a href="arquetipos.html#el-mago">El Mago</a>
+  <a href="arquetipos.html#el-rebelde">El Rebelde</a>
+  <a href="arquetipos.html#el-sabio">El Sabio</a>
+</div>
+
+      </div>
+    </div>
+
+    <a href="universo.html">Universo de Signia</a>
+    <a href="marcas.html">10 Marcas</a>
+    <a href="otros.html">Otros</a>
+  </nav>
+
+  <div class="nav-spacer"></div>
+</header>
+
+<!-- ===================== ÍNDICE ===================== -->
+<section class="contenido-section" id="indice">
+
+  <div class="contenido-left">
+    <h1 class="contenido-title">Arquetipos según Carl Jung</h1>
+
+    <div class="glossary-columns">
+
+      <div class="glossary-group">
+        <span class="letter">A</span>
+        <ul>
+          <li><a href="#el-amante">El Amante</a></li>
+          <li><a href="#el-amigo">El Amigo</a></li>
+        </ul>
+      </div>
+
+      <div class="glossary-group">
+        <span class="letter">B</span>
+        <ul>
+          <li><a href="#el-bufon">El Bufón</a></li>
+        </ul>
+      </div>
+
+      <div class="glossary-group">
+        <span class="letter">C</span>
+        <ul>
+          <li><a href="#el-creador">El Creador</a></li>
+          <li><a href="#el-cuidador">El Cuidador</a></li>
+        </ul>
+      </div>
+
+      <div class="glossary-group">
+        <span class="letter">E</span>
+        <ul>
+          <li><a href="#el-explorador">El Explorador</a></li>
+        </ul>
+      </div>
+
+      <div class="glossary-group">
+        <span class="letter">G</span>
+        <ul>
+          <li><a href="#el-gobernante">El Gobernante</a></li>
+        </ul>
+      </div>
+
+      <div class="glossary-group">
+        <span class="letter">H</span>
+        <ul>
+          <li><a href="#el-heroe">El Héroe</a></li>
+        </ul>
+      </div>
+
+      <div class="glossary-group">
+        <span class="letter">I</span>
+        <ul>
+          <li><a href="#el-inocente">El Inocente</a></li>
+        </ul>
+      </div>
+
+      <div class="glossary-group">
+        <span class="letter">M</span>
+        <ul>
+          <li><a href="#el-mago">El Mago</a></li>
+        </ul>
+      </div>
+
+      <div class="glossary-group">
+        <span class="letter">R</span>
+        <ul>
+          <li><a href="#el-rebelde">El Rebelde</a></li>
+        </ul>
+      </div>
+
+      <div class="glossary-group">
+        <span class="letter">S</span>
+        <ul>
+          <li><a href="#el-sabio">El Sabio</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="contenido-mascots">
+    <img src="arquetipos.svg" alt="Carl Jung con los personajes de Signia">
+  </div>
+
+</section>
+
+<!-- ===================== EL AMANTE ===================== -->
+<section class="term-section" id="el-amante">
+  <div class="term-text">
+    <h1 class="term-title">El Amante</h1>
+    <p><strong>Definición:</strong> Enfocado en la pasión, el deseo, la intimidad y la belleza emocional o estética.</p>
+    <p><strong>Ejemplo:</strong> Chanel evoca elegancia, seducción y sofisticación atemporal para poder despertar el deseo y el atractivo personal.</p>
+  </div>
+  <div class="term-visual">
+    <img src="elamantea.svg" alt="Ejemplo visual: El Amante">
+  </div>
+</section>
+
+<!-- ===================== EL AMIGO ===================== -->
+<section class="term-section" id="el-amigo">
+  <div class="term-text">
+    <h1 class="term-title">El Amigo</h1>
+    <p><strong>Definición:</strong> Busca la pertenencia, la empatía, la autenticidad y conectar desde la cotidianidad sin pretensiones.</p>
+    <p><strong>Ejemplo:</strong> IKEA diseños accesible, cercano y pensado para la vida diaria de todos.</p>
+  </div>
+  <div class="term-visual">
+    <img src="elamigoa.svg" alt="Ejemplo visual: El Amigo">
+  </div>
+</section>
+
+<!-- ===================== EL BUFÓN ===================== -->
+<section class="term-section" id="el-bufon">
+  <div class="term-text">
+    <h1 class="term-title">El Bufón</h1>
+    <p><strong>Definición:</strong> Centrado en el humor, la diversión, disfrutar el presente y romper la rutina con ligereza.</p>
+    <p><strong>Ejemplo:</strong> M&M usa personajes cómicos e irreverentes para sacar una sonrisa y hacer divertido el momento de comer dulces.</p>
+  </div>
+  <div class="term-visual">
+    <img src="elbufona.svg" alt="Ejemplo visual: El Bufón">
+  </div>
+</section>
+
+<!-- ===================== EL CREADOR ===================== -->
+<section class="term-section" id="el-creador">
+  <div class="term-text">
+    <h1 class="term-title">El Creador</h1>
+    <p><strong>Definición:</strong> Impulsado por la innovación, la imaginación y la autoexpresión para dar vida a ideas originales.</p>
+    <p><strong>Ejemplo:</strong> Adobe Illustrator da herramientas digitales precisas para transformar ideas abstractas en arte, diseños y vectores sin límites.</p>
+  </div>
+  <div class="term-visual">
+    <img src="elcreadora.svg" alt="Ejemplo visual: El Creador">
+  </div>
+</section>
+
+<!-- ===================== EL CUIDADOR ===================== -->
+<section class="term-section" id="el-cuidador">
+  <div class="term-text">
+    <h1 class="term-title">El Cuidador</h1>
+    <p><strong>Definición:</strong> Movido por la compasión, la protección, el servicio a los demás y el bienestar colectivo.</p>
+    <p><strong>Ejemplo:</strong> Nestlé ofrece nutrición y bienestar para proteger la salud de la familia en cada etapa de la vida.</p>
+  </div>
+  <div class="term-visual">
+    <img src="elcuidadora.svg" alt="Ejemplo visual: El Cuidador">
+  </div>
+</section>
+
+<!-- ===================== EL EXPLORADOR ===================== -->
+<section class="term-section" id="el-explorador">
+  <div class="term-text">
+    <h1 class="term-title">El Explorador</h1>
+    <p><strong>Definición:</strong> Busca la libertad, la independencia, el descubrimiento de nuevas experiencias y romper la monotonía.</p>
+    <p><strong>Ejemplo:</strong> The North Face fabrica ropa y equipo de alta montaña diseñado para soportar condiciones extremas y motivar a las personas a explorar lo desconocido.</p>
+  </div>
+  <div class="term-visual">
+    <img src="elexploradora.svg" alt="Ejemplo visual: El Explorador">
+  </div>
+</section>
+
+<!-- ===================== EL GOBERNANTE ===================== -->
+<section class="term-section" id="el-gobernante">
+  <div class="term-text">
+    <h1 class="term-title">El Gobernante</h1>
+    <p><strong>Definición:</strong> Basado en el liderazgo, el control, el orden, la responsabilidad y el estatus.</p>
+    <p><strong>Ejemplo:</strong> Rolex proyecta estatus, precisión impecable, lujo y éxito en el nivel más alto.</p>
+  </div>
+  <div class="term-visual">
+    <img src="elgobernantea.svg" alt="Ejemplo visual: El Gobernante">
+  </div>
+</section>
+
+<!-- ===================== EL HÉROE ===================== -->
+<section class="term-section" id="el-heroe">
+  <div class="term-text">
+    <h1 class="term-title">El Héroe</h1>
+    <p><strong>Definición:</strong> Caracterizado por la valentía, la superación de obstáculos, la disciplina y el triunfo sobre las dificultades.</p>
+    <p><strong>Ejemplo:</strong> Nike inspira a superar límites personales y vencer cualquier obstáculo ("Just Do It").</p>
+  </div>
+  <div class="term-visual">
+    <img src="elhereoa.svg" alt="Ejemplo visual: El Héroe">
+  </div>
+</section>
+
+<!-- ===================== EL INOCENTE ===================== -->
+<section class="term-section" id="el-inocente">
+  <div class="term-text">
+    <h1 class="term-title">El Inocente</h1>
+    <p><strong>Definición:</strong> Guiado por el optimismo, la simplicidad, la honestidad y la búsqueda de la felicidad pura y sin complicaciones.</p>
+    <p><strong>Ejemplo:</strong> Coca-Cola vende felicidad simple, nostalgia y momentos positivos en familia.</p>
+  </div>
+  <div class="term-visual">
+    <img src="elinocentea.svg" alt="Ejemplo visual: El Inocente">
+  </div>
+</section>
+
+<!-- ===================== EL MAGO ===================== -->
+<section class="term-section" id="el-mago">
+  <div class="term-text">
+    <h1 class="term-title">El Mago</h1>
+    <p><strong>Definición:</strong> Centrado en la transformación, la visión prometedora, la intuición y hacer realidad experiencias extraordinarias.</p>
+    <p><strong>Ejemplo:</strong> Disney promete transformar momentos ordinarios en magia e ilusión.</p>
+  </div>
+  <div class="term-visual">
+    <img src="elmagoa.svg" alt="Ejemplo visual: El Mago">
+  </div>
+</section>
+
+<!-- ===================== EL REBELDE ===================== -->
+<section class="term-section" id="el-rebelde">
+  <div class="term-text">
+    <h1 class="term-title">El Rebelde</h1>
+    <p><strong>Definición:</strong> Orientado a la disrupción, el cuestionamiento de las reglas, la libertad radical y el cambio de esquemas tradicionales.</p>
+    <p><strong>Ejemplo:</strong> MTV rompió la televisión tradicional transmitiendo música 24/7 con un estilo irreverente y provocador que desafió las reglas.</p>
+  </div>
+  <div class="term-visual">
+    <img src="elrebeldea.svg" alt="Ejemplo visual: El Rebelde">
+  </div>
+</section>
+
+<!-- ===================== EL SABIO ===================== -->
+<section class="term-section" id="el-sabio">
+  <div class="term-text">
+    <h1 class="term-title">El Sabio</h1>
+    <p><strong>Definición:</strong> Buscador constante de la verdad, el conocimiento, la lógica y la comprensión profunda del entorno.</p>
+    <p><strong>Ejemplo:</strong> Google facilita el acceso directo al conocimiento e información global.</p>
+  </div>
+  <div class="term-visual">
+    <img src="elsabio.svg" alt="Ejemplo visual: El Sabio">
+  </div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
